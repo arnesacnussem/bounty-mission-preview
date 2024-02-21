@@ -4,7 +4,7 @@ export const zh: {
     [key in JobStageNames]?: Job;
 } = {
     DynamicCapture: {
-        name: '捕获，但是注意别打错人了',
+        name: '捕获，小心误伤',
     },
     DynamicExterminate: {
         name: '地面歼灭(25-100名敌人)',
