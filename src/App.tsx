@@ -14,7 +14,12 @@ const App = () => {
     const [displaying, setDisplaying] = useState(0);
 
     useEffect(() => {
-        if (file != null) fileHandler(file);
+        if (file != null) {
+            setDisplaying(0);
+            setPreviousSelected(0);
+            setCurrentSelected(0);
+            fileHandler(file);
+        }
     }, [file, fileHandler]);
 
     return (
