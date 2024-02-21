@@ -1,0 +1,43 @@
+/* by GPT */
+
+ul.timeline {
+    list-style-type: none;
+    counter-reset: timeline-counter; /* 初始化计数器 */
+    padding: 0;
+}
+
+ul.timeline li {
+    position: relative;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    counter-increment: timeline-counter; /* 增加计数器的值 */
+}
+
+ul.timeline li::before {
+    content: counter(timeline-counter); /* 显示序号 */
+    position: absolute;
+    left: 0;
+    background-color: #39c5bbe1; /* 序号背景颜色，可自定义 */
+    color: #1e1e1e; /* 序号颜色，可自定义 */
+    width: 20px; /* 序号背景的宽度，可自定义 */
+    height: 20px; /* 序号背景的高度，可自定义 */
+    border-radius: 50%; /* 圆形背景 */
+    text-align: center; /* 序号居中 */
+    line-height: 20px; /* 调整以垂直居中文本 */
+    font-weight: bold;
+}
+
+ul.timeline li::after {
+    content: '';
+    position: absolute;
+    left: 9px; /* 根据序号背景的大小调整 */
+    top: -10px;
+    bottom: 5px;
+    width: 2px; /* 连接线的宽度 */
+    background-color: #39c5bb; /* 连接线的颜色，可自定义 */
+    z-index: -1;
+}
+
+ul.timeline li:not(:first-child)::after {
+    top: -25px; /* 根据需要调整这个值以延长连接线 */
+}
