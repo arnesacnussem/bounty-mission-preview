@@ -149,7 +149,7 @@ const App = () => {
                 {progress === 100 && stages.length == 0 && (
                     <Typography>'没找见啊，要不过会再试试啥的'</Typography>
                 )}
-                {stages.length > 0 && (
+                {progress === 100 && stages.length > 0 && (
                     <Slide
                         in={currentSelected == displaying}
                         mountOnEnter
