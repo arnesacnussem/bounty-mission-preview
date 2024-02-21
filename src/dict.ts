@@ -34,6 +34,6 @@ export const zh: {
         name: '下地洞找箱子x3',
     },
     DynamicDefend: {
-        name: '解放该营地，但是守两分半',
+        name: '解放该营地',
     },
 };
