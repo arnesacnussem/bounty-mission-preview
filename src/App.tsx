@@ -101,7 +101,8 @@ const App = () => {
                 <IconButton
                     color={'primary'}
                     disabled={
-                        stages.length <= 1 || currentSelected == stages.length
+                        stages.length <= 1 ||
+                        currentSelected == stages.length - 1
                     }
                     onClick={() =>
                         setCurrentSelected(p => {
