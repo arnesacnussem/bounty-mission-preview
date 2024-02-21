@@ -5,6 +5,7 @@ import { useFileHandler } from './use-file-handler.tsx';
 import { Box, Button, IconButton, Slide, Typography } from '@mui/material';
 import { ChevronLeft, ChevronRight, Replay } from '@mui/icons-material';
 import { JobStepLine } from './JobStepLine.tsx';
+import DNDBox from './DNDBox.tsx';
 
 const App = () => {
     const { stages, progress, err, fileHandler } = useFileHandler();
@@ -23,12 +24,7 @@ const App = () => {
     }, [file, fileHandler]);
 
     return (
-        <div
-            style={{
-                height: '100%',
-                width: '100%',
-            }}
-        >
+        <DNDBox setFile={setFile}>
             <div
                 style={{
                     display: 'flex',
@@ -38,7 +34,6 @@ const App = () => {
                     id={'fu'}
                     style={{
                         flexGrow: 1,
-                        marginLeft: '8px',
                     }}
                 >
                     <FileUploader
@@ -178,7 +173,7 @@ const App = () => {
                     </Slide>
                 )}
             </div>
-        </div>
+        </DNDBox>
     );
 };
 
