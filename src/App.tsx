@@ -2,8 +2,8 @@ import { useEffect, useState } from 'react';
 import { FileUploader } from 'react-drag-drop-files';
 import './timeline.css';
 import { useFileHandler } from './use-file-handler.tsx';
-import { Box, Button, IconButton, Slide, Typography } from '@mui/material';
-import { ChevronLeft, ChevronRight, Replay } from '@mui/icons-material';
+import { Box, IconButton, Slide, Typography } from '@mui/material';
+import { ChevronLeft, ChevronRight } from '@mui/icons-material';
 import { JobStepLine } from './JobStepLine.tsx';
 import DNDBox from './DNDBox.tsx';
 
@@ -85,18 +85,18 @@ const App = () => {
                     },
                 }}
             >
-                <Button
-                    disabled={progress !== 100}
-                    onClick={() => file && fileHandler(file)}
-                >
-                    <Replay
-                        style={{
-                            width: '24px',
-                            height: '24px',
-                        }}
-                    />
-                    重新加载文件
-                </Button>
+                {/*<Button*/}
+                {/*    disabled={progress !== 100}*/}
+                {/*    onClick={() => file && fileHandler(file)}*/}
+                {/*>*/}
+                {/*    <Replay*/}
+                {/*        style={{*/}
+                {/*            width: '24px',*/}
+                {/*            height: '24px',*/}
+                {/*        }}*/}
+                {/*    />*/}
+                {/*    重新加载文件*/}
+                {/*</Button>*/}
 
                 <IconButton
                     color={'primary'}
