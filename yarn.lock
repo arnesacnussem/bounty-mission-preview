@@ -1546,6 +1546,7 @@ __metadata:
     typescript: "npm:^5.2.2"
     vite: "npm:^5.1.0"
     vite-bundle-visualizer: "npm:0.11.0"
+    vite-plugin-radar: "npm:^0.9.3"
   languageName: unknown
   linkType: soft
 
@@ -3738,6 +3739,15 @@ __metadata:
   bin:
     vite-bundle-visualizer: bin.js
   checksum: 10c0/e028c312d3bf68cc204de4187e6436af555627eca3e3ec90e57410500d4c86448fd8a4b1faeec791c46451a9f8be07cb8649405cb32cd9b657e5c3f06d7982cf
+  languageName: node
+  linkType: hard
+
+"vite-plugin-radar@npm:^0.9.3":
+  version: 0.9.3
+  resolution: "vite-plugin-radar@npm:0.9.3"
+  peerDependencies:
+    vite: ^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0
+  checksum: 10c0/e3640814e769b9927d8b4a3ba412ca96b2de8ef50333bbc12488e85cee66c4bfb67ee8c87bc1ea4797011ed6994925dc0ef507face9d094a64f2613dc6ea8922
   languageName: node
   linkType: hard
 

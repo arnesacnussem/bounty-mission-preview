@@ -1,7 +1,18 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react-swc'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
+import { VitePluginRadar } from 'vite-plugin-radar';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+    plugins: [
+        react(),
+        VitePluginRadar({
+            // enableDev: true,
+            analytics: [
+                {
+                    id: 'G-M4Y0L6E458',
+                },
+            ],
+        }),
+    ],
+});

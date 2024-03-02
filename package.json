@@ -21,7 +21,8 @@
     "react-dom": "^18.2.0",
     "react-drag-drop-files": "^2.3.10",
     "react-is": "^18.2.0",
-    "vite-bundle-visualizer": "0.11.0"
+    "vite-bundle-visualizer": "0.11.0",
+    "vite-plugin-radar": "^0.9.3"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",
